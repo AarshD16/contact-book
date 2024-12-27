@@ -20,7 +20,7 @@ from rest_framework.routers import DefaultRouter
 from CB.views import ContactViewSet
 
 router = DefaultRouter()
-router.register(r'contacts', ContactViewSet)
+router.register(r'contacts', ContactViewSet, basename='contact')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
